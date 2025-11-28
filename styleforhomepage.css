@@ -1,0 +1,541 @@
+*{
+    padding: 0;
+    margin:0;
+    font-family: "Syne", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 2.5vh;
+  font-style: normal;
+   /* border: 2px solid black; */
+   /* border: 2px solid black;
+        height: 50px;
+        width: 50px;
+        background-position:center;
+        background-size:cover;
+        background-repeat: no-repeat;
+        */
+    
+}
+body, html{
+    width: 100%;
+    background: whitesmoke;
+    /* height: ; */
+}
+
+/*================================================= Phone========================================== */
+@media (max-width:770px) {
+  
+    ul{
+        list-style: none;   
+    }
+    header{
+        position: fixed;
+        top:0;
+        left: 0;
+        width: 100%;
+        height: 12vh;
+        background: #FFFFFF;   
+        padding:auto;
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        flex-wrap: 1;
+        gap: 0;
+    }
+    img{
+        width: 100%;
+        height: auto;
+    }
+    .logo{
+        margin-top: 20px;
+        width:90px;
+        height:90px;
+        margin-left: 10vw;
+        margin-right: auto;
+    }
+    .nav_content {
+        display: none;
+    }
+
+    .menu_list{
+        position:fixed;
+        top:0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color:#94a3b8;
+        z-index: 1;
+        display: flex; 
+         flex-direction: column;
+        /* justify-content: center; */
+        /* align-items: center; */
+    }
+    .menu_items{
+        height: 6vh;
+        padding-top: 3vh;
+        border: 1px solid black;
+
+    }
+    .lisitemst{
+        margin-top: 7vh;
+        display: flex;
+        flex-direction: column;
+        gap: 3vh;
+        width: 100%;
+        /* height: 40vh; */
+        text-align: center;
+    }
+    
+    .closemenulist{
+        margin-top:10vh;
+        text-align: center;
+    }
+    #nav-toggle, .toggle , .login , .closeforusericontablet{
+        display: none;
+    }
+    .menu-btn {
+        font-size: 20px;
+        cursor: pointer;
+    }
+    #userbtn_for_phone{
+        cursor: pointer;
+    }
+    .close-icon {
+        display: none;
+    }
+    .menu_list{
+        display: none;
+    }
+    #nav-toggle:checked ~ .menu_list {
+        display: flex;
+    }
+    #nav-toggle:checked + .menu-btn .menu-icon {
+        display: none;
+    }
+    #nav-toggle:checked ~ .menu-btn .close-icon {
+        display:block;
+    }
+
+    .login{
+        background-color: #4255FF;
+        height: 50px;
+        width: 60px;
+        border-radius: 15px;
+        border: none;
+    }
+    .login:hover{
+        box-shadow:  2px 2px 12px -2px #94a3b8,
+                    -3px -3px 12px -2px #f1f5f9;
+    } 
+    #user_btn, #openlogin{
+        display: none;
+    }
+
+    #login_signin{
+        display: none;
+    }
+
+
+
+
+
+/*======================================= Login-start======================================================== */
+    .menu-btn{
+        /* border: 2px solid black; */
+        margin-right: 10vw ;
+        margin-left: 2vw;
+    }
+    #user_toggle{
+        display: none;
+    }
+    #login_signin{
+        /* border: 2px solid black; */
+        position: fixed;
+        left: 0;
+        top:0;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        gap:3vh;
+        width: 100%;
+        height: 100vh;
+      
+        background-color: hsla(230 , 75%, 32%, .1);
+        backdrop-filter: blur(10px);
+    }
+
+    .closeforusericon{
+         width: 25px;        
+         height: 25px;
+        /* border: 2px solid black; */
+        margin-top: 20vh;
+        cursor: pointer;
+    }
+    /* set display: none; */
+    #login_signin{
+        display: none;
+    }
+    #user_toggle:checked ~ #login_signin{
+        display: flex;
+    }
+
+    #email, #password, .login_btn{
+        padding-left: 10px;
+        height: 7vh;
+        display: block;
+        width: 39.5vw;
+        border-radius: 7px;
+        text-align: left;
+        border-width:1px;
+        /* gap:5vh; */
+    }
+    
+    .login_form{
+        /* border: 10px solid black; */
+        border-radius: 20px;
+        padding: 40px;
+        width: 40vw;
+        height: auto;
+        border: 1px solid black;
+        display: flex;
+        flex-direction: column;
+        background: #FFFFFF;   
+        align-items: center;
+        gap:2vh;
+        border: none;
+         box-shadow:  2px 2px 12px -2px #94a3b8,
+                    -3px -3px 12px -2px #f1f5f9;
+
+    }
+    .login_btn{
+        background-color: #4255FF;
+        border: none;
+    }
+    
+   
+
+    /*=======================================Login-end======================================================== */
+
+
+}
+
+/*================================================== Tablet===================================================== */
+@media (min-width: 770px) {
+    #user_toggle{
+        display: none;
+    }
+    #userbtn_for_phone{
+        display: none;
+    }
+    ul{
+        list-style: none;   
+    }
+    header{
+        position: fixed;
+        top:0;
+        left: 0;
+        width: 100%;
+        height: 12vh;
+        background: #FFFFFF;   
+        padding:auto;
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        flex-wrap: 1;
+        gap: 1rem;
+    }
+    img{
+        width: 100%;
+        height: auto;
+    }
+    .logo{
+        width: 90px;
+        height: 90px;
+        margin-top: 20px;
+        margin-right: 1.5rem;
+    }
+    .nav_content{
+        display: flex;
+        flex-direction: row; 
+        gap:1rem;
+        margin-right: 0.5rem;
+    }
+     .toggle{
+       display: flex;
+       flex-direction: row;
+       gap:2rem;
+       justify-content: center;
+       align-items: center;    
+    }
+    .language{
+         width: 30px;
+        height: 20px;
+        border: 2px solid black;
+        border-radius: 5px;
+        text-align: center;
+    }
+    .menu{
+        display: none;
+    }
+    .login{
+        background-color: #4255FF;
+         height: 50px;
+        width: 70px; 
+        border-radius: 15px;
+        /* border: none; */
+        text-align: center;
+        /* padding: 10px; */
+        /* padding-top:  100px; */
+    }
+    .login:hover{
+        box-shadow:  2px 2px 12px -2px #94a3b8,
+                    -3px -3px 12px -2px #f1f5f9;
+    } 
+
+    .menu-btn , #nav-toggle , .menu_list, .usericon_for_phone, #login_signin, .closeforusericonphone , #openlogin{
+        display: none;
+    }
+       /*======================================= Login-start======================================================== */
+    .menu-btn{
+        margin-right: 10vw ;
+        margin-left: 2vw;
+    }
+    #user_toggle{
+        display: none;
+    }
+    #login_signin{
+        position: fixed;
+        left: 0;
+        top:0;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        gap:3vh;
+        width: 100%;
+        height: 100vh;
+      
+        background-color: hsla(230 , 75%, 32%, .1);
+        backdrop-filter: blur(10px);
+    }
+
+    .closeforusericon{
+         width: 25px;        
+         height: 25px;
+        /* border: 2px solid black; */
+        margin-top: 12vh;
+    }
+    /* set display: none; */
+    #login_signin{
+        display: none;
+    }
+    #user_toggle:checked ~ #login_signin{
+        display: flex;
+    }
+
+    #email, #password, .login_btn{
+        padding-left: 10px;
+        height: 7vh;
+        display: block;
+        width: 29.5vw;
+        border-radius: 7px;
+        text-align: left;
+        border-width:1px;
+        /* gap:5vh; */
+    }
+    
+    .login_form{
+        
+        border-radius: 20px;
+        padding: 40px;
+        width: 30vw;
+        height: auto;
+        border: 1px solid black;
+        display: flex;
+        flex-direction: column;
+        background: #FFFFFF;   
+        align-items: center;
+        gap:2vh;
+        border: none;
+         box-shadow:  2px 2px 12px -2px #94a3b8,
+                    -3px -3px 12px -2px #f1f5f9;
+
+    }
+    .login_btn{
+        background-color: #4255FF;
+        border: none;
+    }
+    
+    #user_btn{
+        display: none;
+    }
+
+    #user_btn:checked ~ #login_signin{
+        display: flex;
+    }
+    #openlogin:checked ~ #login_signin{
+        display: flex;
+    }
+
+
+    
+    /*=======================================Login-end======================================================== */
+
+
+
+}
+
+/*=================================================Laptop============================================ */
+@media (min-width: 1024px) {
+    #user_toggle{
+        display: none;
+    }
+    ul{
+        list-style: none;   
+    }
+    header{
+        position: fixed;
+        top:0;
+        left: 0;
+        width: 100%;
+        height: 12vh;
+        background: #FFFFFF;   
+        padding:auto;
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        flex-wrap: 1;
+        gap: 0vw;
+    }
+    img{
+        width: 100%;
+        height: auto;
+    }
+    .logo{
+        margin-top: 20px;
+        width: 90px;
+        height: 90px;
+        margin-right: 6rem;
+    }
+  
+    .nav_content{
+        display: flex;
+        flex-direction: row;
+        gap:2rem;
+        margin-left:10vw;  /*  6vw */
+        margin-right: 5vw;
+        
+    }
+    .toggle{
+       display: flex;
+       flex-direction: row;
+       gap:3rem;
+       justify-content: center;
+       align-items: center;
+    
+    }
+    .language{
+        width: 30px;
+        height: 22px;
+        border-radius: 5px;
+        text-align: center;
+        /* margin-right: ; */
+    }
+    .menu{
+        display: none;
+    }
+    
+  
+    .login{
+        background-color: #4255FF;
+        height: 40px;
+        width: 70px;
+        border-radius: 15px;
+        border: none;
+        /* margin-left: 1vw; */
+    }
+    .login:hover{
+        box-shadow:  2px 2px 12px -2px #94a3b8,
+                    -3px -3px 12px -2px #f1f5f9;
+    } 
+    .usericon_for_phone{
+        display: none;
+    }
+    /*======================================= Login-start======================================================== */
+    .menu-btn{
+        /* border: 2px solid black; */
+        margin-right: 10vw ;
+        margin-left: 2vw;
+    }
+    #user_toggle{
+        display: none;
+    }
+    #login_signin{
+        /* border: 2px solid black; */
+        position: fixed;
+        left: 0;
+        top:0;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        gap:3vh;
+        width: 100%;
+        height: 100vh;
+      
+        background-color: hsla(230 , 75%, 32%, .1);
+        backdrop-filter: blur(10px);
+    }
+
+    .closeforusericon{
+         width: 25px;        
+         height: 25px;
+        /* border: 2px solid black; */
+    }
+    /* set display: none; */
+    #login_signin{
+        display: none;
+    }
+    #user_toggle:checked  ~ #login_signin{
+        display: flex;
+        
+    }
+    #openlogin:checked ~ #login_signin{
+        display: flex;
+    }
+    #email, #password, .login_btn{
+        padding-left: 10px;
+        height: 7vh;
+        display: block;
+        width: 29.5vw;
+        border-radius: 7px;
+        text-align: left;
+        border-width:1px;
+        /* gap:5vh; */
+    }
+    
+    .login_form{
+        
+        border-radius: 20px;
+        padding: 40px;
+        width: 30vw;
+        height: auto;
+        border: 1px solid black;
+        display: flex;
+        flex-direction: column;
+        background: #FFFFFF;   
+        align-items: center;
+        gap:2vh;
+        border: none;
+         box-shadow:  2px 2px 12px -2px #94a3b8,
+                    -3px -3px 12px -2px #f1f5f9;
+
+    }
+    .login_btn{
+        background-color: #4255FF;
+        border: none;
+    }
+
+    /*=======================================Login-end======================================================== */
+    
+}

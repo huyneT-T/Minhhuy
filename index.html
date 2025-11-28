@@ -1,0 +1,115 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./styleforhomepage.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css">
+        <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap" rel="stylesheet">
+        <title>Document</title>
+        
+    </head>
+    <body>
+        <!-- <div class="main_bg"></div> -->
+        
+                
+        <header class="NAV">
+                <div class="logo">
+                    <img src="./Ảnh chụp màn hình 2025-11-25 152039.png" alt="">
+                    </div>
+                <input type="checkbox" name="" id="user_toggle" style="display: none;" >
+                <label for="user_toggle" id="userbtn_for_phone" >
+                    <span class="usericon_for_phone">
+                        <i class="ri-user-line" ></i>    
+                    </span>
+                </label>
+                
+                <input type="checkbox" id="nav-toggle">                
+                <label for="nav-toggle" class="menu-btn">
+                    <span class="menu-icon">
+                        <i class="ri-menu-line"> </i>
+                    </span>
+                    <span class="close-icon">
+                        <i class="ri-close-large-fill"></i>
+                    </span>
+                </label>
+                <ul class="nav_content">
+                    <li class="nav_item">Home</li>
+                    <li class="nav_item">Schedule</li>
+                    <li class="nav_item">Intoduction</li>
+                    <li class="nav_item">About Us   </li>
+                    <li class="nav_item">Focus</li>
+                </ul>
+
+            
+        
+
+                <div class="menu_list" >
+                    <div class="lisitemst">
+                        <div class="menu_items">Home</div>
+                        <div class="menu_items">Schedule</div>
+                        <div class="menu_items">Intoduction</div>
+                        <div class="menu_items">About Us </div>
+                        <div class="menu_items focus">Focus</div>
+                    </div>
+                    <label for="nav-toggle">
+                        <div class="closemenulist" style="cursor:pointer;">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="25" height="25" fill="currentColor"><path d="M10.5859 12L2.79297 4.20706L4.20718 2.79285L12.0001 10.5857L19.793 2.79285L21.2072 4.20706L13.4143 12L21.2072 19.7928L19.793 21.2071L12.0001 13.4142L4.20718 21.2071L2.79297 19.7928L10.5859 12Z"></path></svg>  
+                        </div>  
+                    </label>
+                    
+                </div>           
+
+                <input type="checkbox" name="" id="user_btn">
+                <input type="checkbox" name="" id="openlogin">
+
+                <div class="toggle">
+                    <!-- Icon here -->
+                    <div class="language" style="cursor: pointer;" >VN</div>
+                    <label for="user_btn" >
+                        <i class="ri-user-line" class="user"  style="cursor: pointer;"></i>
+                    </label>
+            </div>
+
+            <label for="user_btn"  style="display: flex;justify-content: center;  margin-left: 2vw;" >
+                <div class="login" style="padding-top: 20px ; cursor: pointer;">Login</div>
+            </label>
+        
+            <div id="login_signin">
+                <label for="user_toggle" style="margin-top: 10vh" class="closeforusericonphone">
+                    <span> 
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="25" height="25" fill="currentColor"><path d="M10.5859 12L2.79297 4.20706L4.20718 2.79285L12.0001 10.5857L19.793 2.79285L21.2072 4.20706L13.4143 12L21.2072 19.7928L19.793 21.2071L12.0001 13.4142L4.20718 21.2071L2.79297 19.7928L10.5859 12Z"></path></svg>  
+                    </span>       
+                </label>
+                <label for="user_btn" style="margin-top: 10vh  ;cursor: pointer;" class="closeforusericontablet">
+                    <span class="closeforusericontablet"> 
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="25" height="25" fill="currentColor"><path d="M10.5859 12L2.79297 4.20706L4.20718 2.79285L12.0001 10.5857L19.793 2.79285L21.2072 4.20706L13.4143 12L21.2072 19.7928L19.793 21.2071L12.0001 13.4142L4.20718 21.2071L2.79297 19.7928L10.5859 12Z"></path></svg>  
+                    </span>       
+                </label>
+                   
+                <form action="" class="login_form">
+                
+                    <h2 class="login_title"> Log In</h2>
+                    <div class="login_group">
+                        <div>
+                            <label for="email" class="login_lable"><p style="margin-bottom: 5px;">Email</p> </label>
+                            <input type="text" name="" id="email" placeholder="Write your email" class="login_input">
+                        </div>
+                        <div style="margin-top: 2.3vw;">
+                            <label for="email" class="login_lable"> <p style="margin-bottom: 5px;">Password</p> </label>
+                            <input type="text" name="" id="password" placeholder="Enter your password" class="login_input">
+                        </div>
+                    </div>
+                        <p class="signup" style="text-align: center; font-size: 20px;">
+                            You do not have an account? <a href="#" style="margin-left: 5px;text-decoration: none; color:#347cc9;"> Sign Up </a>
+                        </p>
+                        <a href="#" class="login_forgot" style="text-align: center; text-decoration: none; color:#347cc9;">You forgot your password</a>
+                        <button type="submit" class="login_btn" style=" text-align: center; color:#fbfbfb; cursor: pointer; "> Login </button>
+                </form>
+            </div>
+
+        </header>
+    
+
+    </body>
+    </html>
